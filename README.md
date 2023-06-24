@@ -74,4 +74,4 @@ Here is the formal description of our entities, relationships, and attributes:
 - Award_Ceremony (Movie_ID, Award_ID, Year)
 
 ## The final ER Diagram using Microsoft SQL Server
-<img width='900' height='600' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/353642261_2955942247872032_5143106380326264536_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=PHQPh5JR72EAX-EVqtG&_nc_ht=scontent-lga3-2.xx&oh=00_AfCfbvLwduo87KjdZIshVA321hrBSkx44YMmiAEFCEkT9Q&oe=649BF20E" />
+<img width='900' height='600' src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/353449671_2955977304535193_6713250933068755998_n.jpg?_nc_cat=110&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=rajrWFR8S0IAX_ZrSmC&_nc_ht=scontent-lga3-1.xx&oh=00_AfDDfIk4DXA76hq1iAtfi6yk36lOags2PR_edU9xMKXS6Q&oe=649C86A7" />

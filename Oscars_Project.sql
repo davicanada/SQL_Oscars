@@ -1,9 +1,7 @@
-
-
 -- Step 1: Create the Database
 
-/*CREATE DATABASE Oscars;
-USE Oscars;*/
+CREATE DATABASE Oscars;
+USE Oscars;
 
 -- Step 2: Create the tables
 
@@ -51,8 +49,8 @@ CREATE TABLE Participation(
 	FOREIGN KEY(P_Movie_ID) REFERENCES Movie(Movie_ID)
 );
 
--- ## Award Cerimony Table
-CREATE TABLE Award_Cerimony(
+-- ## Award Ceremony Table
+CREATE TABLE Award_Ceremony(
 	R_Movie_ID INT,
 	R_Award_ID INT,
 	Year INT NOT NULL,
@@ -269,7 +267,7 @@ INSERT INTO Participation(P_Actor_ID, P_Movie_ID) VALUES
 (42, 16);
 
 -- ## Award_Cerimony Table
-INSERT INTO Award_Cerimony(R_Movie_ID, R_Award_ID, Year) VALUES
+INSERT INTO Award_Ceremony(R_Movie_ID, R_Award_ID, Year) VALUES
 (1, 1, 2011),
 (1, 2, 2011),
 (1, 3, 2011),
@@ -323,10 +321,10 @@ INSERT INTO Participation VALUES
 
 -- b) Award Cerimony
 
-SELECT * FROM Award_Cerimony
+SELECT * FROM Award_Ceremony
 SELECT * FROM Award
 
-INSERT INTO Award_Cerimony VALUES
+INSERT INTO Award_Ceremony VALUES
 (6, 8, 2022);
 
 
@@ -348,7 +346,7 @@ INSERT INTO Award VALUES
 
 -- b) Award_Cerimony
 
-INSERT INTO Award_Cerimony VALUES
+INSERT INTO Award_Ceremony VALUES
 (1, 1, 2022);
 
 -- 5) Checking the Integrity Constraint in the Actor table:

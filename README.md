@@ -62,8 +62,8 @@ We look for possible characteristics of the entities:
 2. Description
 
 ## Summary: Entities, Attributes and Relationships
-The model below show relationships many-to-many. The goal is to substitute them to other type of relationship. To do this, we need to create tables as supports. 
-<img width='900' height='600' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/356232219_2955922324540691_108196361103214000_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=LtEfvkuBmzUAX8NpcCX&_nc_ht=scontent-lga3-2.xx&oh=00_AfDM-bkzH4pNZJot21hLnGqhJWdGpa7l3QEomUeBfIYQTA&oe=649B9169" />
+The model below show relationships many-to-many. The goal is to substitute them to other type of relationship. To do this, we need to create two auxiliary tables.. 
+<img width='900' height='500' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/356232219_2955922324540691_108196361103214000_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=LtEfvkuBmzUAX8NpcCX&_nc_ht=scontent-lga3-2.xx&oh=00_AfDM-bkzH4pNZJot21hLnGqhJWdGpa7l3QEomUeBfIYQTA&oe=649B9169" />
 
 Here is the formal description of our entities, relationships, and attributes:
 - Movie (Movie_ID, Title, Director_ID)

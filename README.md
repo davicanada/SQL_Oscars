@@ -43,22 +43,22 @@ We look for action verbs that associate entities:
 ## Attributes
 We look for possible characteristics of the entities:
 ### Movie
-1. Code
+1. ID
 2. Title
 3. Director
 ### Actor
-1. Code
+1. ID
 2. Name
 3. City
 4. Country
 5. Gender
 ### Director
-1. Code
+1. ID
 2. Name
 3. City
 4. Country
 ### Award
-1. Code
+1. ID
 2. Description
 
 ## Summary: Entities, Attributes and Relationships

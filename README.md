@@ -36,9 +36,10 @@ To identify the entities, we look for elements that can have multiple occurrence
 4. Award
 
 ## Relationships
-We look for action verbs that associate entities:
-1. Actor participates in Movie
-2. Movie wins Award
+We look for action verbs that associate entities, for example:
+1. Actor participes in a Movie
+2. Movie wins an Award
+3. Director directs a Movie
 
 ## Attributes
 We look for possible characteristics of the entities:
@@ -62,13 +63,24 @@ We look for possible characteristics of the entities:
 2. Description
 
 ## Summary: Entities, Attributes and Relationships
-The ERD below shows relationships many-to-many. The goal is to substitute them to other type of relationship. To do this, we need to create two auxiliary tables.
+It is necessary to create the ERD (Entity Relationship Diagram) and define the cardinalities involved for the project in the conceptual model:<br><br>
 <img width='900' height='500' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/356232219_2955922324540691_108196361103214000_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=LtEfvkuBmzUAX8NpcCX&_nc_ht=scontent-lga3-2.xx&oh=00_AfDM-bkzH4pNZJot21hLnGqhJWdGpa7l3QEomUeBfIYQTA&oe=649B9169" />
+
+
+Now that the cardinalities have been defined, it is necessary to adjust those that generate a many-to-many relationship. In the case of this project, we have two relationships that generate this type of cardinality. They are:
+- Movie and Actor
+- Movie and Award
+
+Then the ERD becomes like this: <br><br>
+<img width='900' height='500' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/356650846_2958744327591824_350077139536085951_n.jpg?_nc_cat=111&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=kI6iV1JkqOQAX_oeF_Z&_nc_ht=scontent-lga3-2.xx&oh=00_AfBHemlouTv2LMjPTaqobediYClka5PF-CX7Ni63xmV1CA&oe=64A12CBA" /> <br><br>
+As you can see at the Ceremony Award table, while the columns Movie_ID and Award_ID are foreign keys referring to the tables Movie and Award, respectively, both of them together form the composite primary key of the Award Ceremony table.
+
+Similarly, in the Participation table, the columns Actor_ID and Movie_ID are foreign keys referring to the Actor and Movie tables, respectively. Together, they form the composite primary key of the Participation table.
 
 Here is the formal description of our entities, relationships, and attributes:
 - Movie (Movie_ID, Title, Director_ID)
-- Actor (Actor_ID, Actor_Name, City, Country, Gender)
-- Director (Director_ID, Director_Name, City, Country)
+- Actor (Actor_ID, Actor_Name, Actor_City, Actor_Country, Actor_Gender)
+- Director (Director_ID, Director_Name, Director_City, Director_Country)
 - Award (Award_ID, Award_Description)
 - Participation (P_Actor_ID, P_Movie_ID)
 - Award_Ceremony (Movie_ID, Award_ID, Year)

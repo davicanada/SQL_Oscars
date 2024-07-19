@@ -64,7 +64,7 @@ We look for possible characteristics of the entities:
 
 ## Summary: Entities, Attributes and Relationships
 It is necessary to create the ERD (Entity Relationship Diagram) and define the cardinalities involved for the project in the conceptual model:<br><br>
-<img width='900' height='500' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/356232219_2955922324540691_108196361103214000_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=LtEfvkuBmzUAX8NpcCX&_nc_ht=scontent-lga3-2.xx&oh=00_AfDM-bkzH4pNZJot21hLnGqhJWdGpa7l3QEomUeBfIYQTA&oe=649B9169" />
+<img width='900' height='500' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/356232219_2955922324540691_108196361103214000_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XbfYSldOYTgQ7kNvgGn8gLh&_nc_ht=scontent-lga3-2.xx&cb_e2o_trans=t&oh=00_AYCbYEUXfKZeGFMJob_rkQLseG3PjwnOGWg7bzLh3FSQ9Q&oe=66A05D69" />
 
 
 Now that the cardinalities have been defined, it is necessary to adjust those that generate a many-to-many relationship. In the case of this project, we have two relationships that generate this type of cardinality. They are:
@@ -72,7 +72,7 @@ Now that the cardinalities have been defined, it is necessary to adjust those th
 - Movie and Award
 
 Then the ERD becomes like this: <br><br>
-<img width='900' height='500' src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/356650846_2958744327591824_350077139536085951_n.jpg?_nc_cat=111&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=kI6iV1JkqOQAX_oeF_Z&_nc_ht=scontent-lga3-2.xx&oh=00_AfBHemlouTv2LMjPTaqobediYClka5PF-CX7Ni63xmV1CA&oe=64A12CBA" /> <br><br>
+<img width='900' height='500' src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/356650846_2958744327591824_350077139536085951_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IDUHXlzPHssQ7kNvgHi0jY0&_nc_ht=scontent-lga3-1.xx&cb_e2o_trans=t&oh=00_AYB4wRvQmSp64-L9bx4V9xAH5_Lpc84CFUwMEzmGN7wdoA&oe=66A07A7A" /> <br><br>
 As you can see at the Ceremony Award table, while the columns Movie_ID and Award_ID are foreign keys referring to the tables Movie and Award, respectively, both of them together form the composite primary key of the Award Ceremony table.
 
 Similarly, in the Participation table, the columns Actor_ID and Movie_ID are foreign keys referring to the Actor and Movie tables, respectively. Together, they form the composite primary key of the Participation table.
@@ -86,4 +86,4 @@ Here is the formal description of our entities, relationships, and attributes:
 - Award_Ceremony (Movie_ID, Award_ID, Year)
 
 ## The final ER Diagram using Microsoft SQL Server
-<img width='900' height='600' src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/353449671_2955977304535193_6713250933068755998_n.jpg?_nc_cat=110&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=rajrWFR8S0IAX_ZrSmC&_nc_ht=scontent-lga3-1.xx&oh=00_AfDDfIk4DXA76hq1iAtfi6yk36lOags2PR_edU9xMKXS6Q&oe=649C86A7" />
+<img width='900' height='600' src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/353449671_2955977304535193_6713250933068755998_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fn3Qu1qfF88Q7kNvgHvvT3a&_nc_ht=scontent-lga3-1.xx&cb_e2o_trans=t&oh=00_AYAs2D69341zhYqBull79JXeA-h8Dk6WFAlt1CaoF1aGXQ&oe=66A071A7" />
